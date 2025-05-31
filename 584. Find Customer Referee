@@ -1,0 +1,6 @@
+/* https://leetcode.com/problems/find-customer-referee/?envType=study-plan-v2&envId=top-sql-50
+Write your MySQL query statement below
+we need to capture rows those do not match with referee id 2 
+we need to write referee_id is null beacse null can not be compared with integer value if you did then it would give false so better you should  include null rows
+*/
+select name from customer where referee_id != 2 or referee_id is null;
